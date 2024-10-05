@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stream - Space</title>
+    <link rel="stylesheet" href="c.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* توسيط العناصر أفقياً */
+            justify-content: center; /* توسيط العناصر عمودياً */
+            height: 100vh; /* يجعل الجسم بارتفاع الشاشة */
+            margin: 0; /* إزالة الهوامش */
+        }
+
+        nav {
+            top: 0; /* بحيث يكون في أعلى الصفحة */
+            z-index: 10; /* تأكد من أن شريط التنقل فوق باقي المحتوى */
+        }
+
+        header {
+            margin-top: 70px; /* ترك مساحة أسفل شريط التنقل */
+            text-align: center; /* توسيط النص */
+        }
+
+        #live-stream {
+            display: flex;
+            justify-content: center; /* توسيط iframe أفقياً */
+            align-items: center; /* توسيط iframe عمودياً */
+            flex: 1; /* يجعل هذا القسم يأخذ المساحة المتبقية */
+            margin-top: 20px; /* ترك مساحة فوق iframe */
+            width: 5000px;
+        }
+
+        iframe {
+            width: 100%; /* عرض iframe 100% */
+            max-width: 800px; /* الحد الأقصى للعرض */
+            height: 500px; /* ارتفاع iframe */
+            border: none; /* إزالة الحدود */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo" style="display: flex; align-items: center; justify-content: center;">
+            <span style="color:#d58318; font-size:26px; font-weight:bold; letter-spacing: 1px;margin-left: 20px;">VISOIN</span>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+        <li><a href="sh.html">About</a></li>
+        <li><a href="so.html"> 3D solar system</a></li>
+        <li><a href="c.html"> Our solar system</a></li>
+        <li><a href="live.html">live</a></li>
+        <li><a href="whole.html">About holes</a></li>
+        <li><a href="ga.html">Break game</a></li>
+        <li><a href="typ.html">type of planet</a></li>
+        <li><a href="move.html"> Documentaries</a></li>
+        <li><a href="bz.html"> puzzle</a></li>
+        <li><a href="cam.html"> cam</a></li>
+        <li><a href="bord.html"> art</a></li>
+    </nav>
+
+    <header>
+        <h1>Live Stream of Space Exploration</h1>
+    </header>
+
+    <section id="live-stream">
+        <iframe src="https://www.nasa.gov/nasatv" title="Live Space Stream"></iframe>
+    </section>
+</body>
+</html>
+
+

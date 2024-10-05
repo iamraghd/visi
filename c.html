@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webleb</title>
+  <link rel="stylesheet" href="c.css">
+
+</head>
+<body>
+  <nav>
+    <div class="logo" style="display: flex;align-items: center;">
+     <span style="color:#01939c; font-size:26px; font-weight:bold; letter-spacing: 1px;margin-left: 20px;">vision</span>
+     
+    </div>
+    <nav>
+      <div class="logo" style="display: flex;align-items: center;">
+       <span  style="color:#d58318; font-size:26px; font-weight:bold; letter-spacing: 1px;margin-left: 20px;">VISOIN</span>
+      </div>
+      <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sh.html">About</a></li>
+        <li><a href="so.html"> 3D solar system</a></li>
+        <li><a href="c.html"> Our solar system</a></li>
+        <li><a href="live.html">live</a></li>
+        <li><a href="whole.html">About holes</a></li>
+        <li><a href="ga.html">Break game</a></li>
+        <li><a href="typ.html">type of planet</a></li>
+        <li><a href="move.html"> Documentaries</a></li>
+        <li><a href="bz.html"> puzzle</a></li>
+        <li><a href="cam.html"> cam</a></li>
+        <li><a href="bord.html"> art</a></li>
+        
+       
+    </ul>
+  </nav>
+  <div class="slider" x-data="{start: true, end: false}" style="padding-top: 150px;">
+    <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+      <div class="slider__item">
+        <img class="slider__image" src="e.jpeg" alt="Image">
+        <div class="slider__info">
+          <h2>Earth is the only known planet that supports life. It is characterized by the presence of water on its surface and a rich biological diversity.</h2>
+    <a href="https://solarsystem.nasa.gov/planets/earth/overview/">Read more about Earth</a>
+         
+        </div>
+      </div>
+            <div class="slider__item">
+        <img class="slider__image" src="my.jpeg" alt="Image">
+        <div class="slider__info">
+         <h2>Mercury is the closest planet to the Sun and the smallest in our solar system. It features extreme temperature variations, being very hot during the day and very cold at nigh</h2>
+         <a href="https://solarsystem.nasa.gov/planets/mercury/overview/">Read more about Mercury</a>
+         </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="mr.jpeg"alt="Image">
+        <div class="slider__info">
+          <h2>Mars is known as the Red Planet due to the color of its soil. It is considered a potential place for exploring life beyond Earth.</h2>
+    <a href="https://solarsystem.nasa.gov/planets/mars/overview/">Read more about Mars</a>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="o.jpeg" alt="Image">
+        <div class="slider__info">
+          <h2>Uranus is known as an "sideways" planet because it rotates on its side. It has a blue color due to methane in its atmosphere.</h2>
+          <a href="https://solarsystem.nasa.gov/planets/uranus/overview/">Read more about Uranus</a>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="n.jpeg" alt="Image">
+        <div class="slider__info">
+          <h2>Neptune is the farthest planet from the Sun, characterized by strong winds and dark storms. It is known for its deep blue color.</h2>
+          <a href="https://solarsystem.nasa.gov/planets/neptune/overview/">Read more about Neptune</a>
+      </body>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="p.jpeg" alt="Image">
+        <div class="slider__info">
+          <h2>Jupiter is the largest planet in our solar system and is known for its massive storms, including the Great Red Spot.</h2>
+          <a href="https://solarsystem.nasa.gov/planets/jupiter/overview/">Read more about Jupiter</a>
+          <h2>Card 6</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="u.jpeg" alt="Image">
+        <div class="slider__info">
+          <h2>Saturn is famous for its stunning rings. It is a gas giant primarily composed of hydrogen and helium.</h2>
+    <a href="https://solarsystem.nasa.gov/planets/saturn/overview/">Read more about Saturn</a>
+        
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="v.jpeg" alt="Image">
+        <div class="slider__info">
+          <h2>Venus, known as the planet of love, is the second planet from the Sun. It has a thick atmosphere composed mainly of carbon dioxide and experiences high temperatures.</h2>
+    <a href="https://solarsystem.nasa.gov/planets/venus/overview/">Read more about Venus</a>
+        </div>
+      </div>
+    <div class="slider__nav" style="display: flex;justify-content: center;">
+      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
+      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js"></script>
+</body>
+</html>
+
